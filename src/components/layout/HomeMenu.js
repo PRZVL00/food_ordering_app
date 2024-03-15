@@ -1,13 +1,18 @@
 import Image from "next/image";
+import MenuItem from "../menu/MenuItem";
+import SectionHeaders from "./SectionHeaders";
 
 export default function HomeMenu() {
   return (
     <>
       <section>
-        <div className="absolute h-full left-0 right-0  w-full ">
-          <div className="h-48 w-48 absolute left-0">
+        <div className="absolute  left-0 right-0  w-full ">
+          <div
+            className="absolute -left-4 -z-10 transform scale-x-(-1)"
+            style={{ top: "-170px", height: "20rem", width: "20rem" }}
+          >
             <Image
-              src={"/salad1.png"}
+              src={"/salad2.png"}
               alt={"salad"}
               layout={"fill"}
               objectFit={"contain"}
@@ -15,7 +20,7 @@ export default function HomeMenu() {
           </div>
           <div
             className="absolute right-0"
-            style={{ top: "-250px", height: "30rem", width: "30rem" }}
+            style={{ top: "-270px", height: "30rem", width: "30rem" }}
           >
             <Image
               src={"/salad1.png"}
@@ -25,9 +30,18 @@ export default function HomeMenu() {
             />
           </div>
         </div>
-        <div className="text-center">
-          <h3 className="uppercase text-gray-500 leading-4">Check Out</h3>
-          <h2 className="text-primary font-bold text-4xl italic">Menu</h2>
+        <SectionHeaders subHeader={"Check out"} mainHeader={"Menu"} />
+        <div className="grid grid-cols-5 gap-8 px-60 py-20">
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
+          <MenuItem />
         </div>
       </section>
     </>

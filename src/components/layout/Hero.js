@@ -3,7 +3,7 @@ import RightArrow from "../icons/RightArrow";
 
 export default function Hero() {
   return (
-    <div className="max-w-9xl mx-auto p-4">
+    <div className="max-w-9xl mx-auto p-4 mt-4  ">
       <section className="hero">
         <div className="p-12">
           <h1 className="text-9xl font-semibold ">
