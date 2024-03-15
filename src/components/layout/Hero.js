@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import RightArrow from "../icons/RightArrow";
 
 export default function Hero() {
